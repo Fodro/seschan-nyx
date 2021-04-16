@@ -4,6 +4,9 @@ A simple, dependency-free image board.
 
 ![screenshot](/screenshot.png)
 
+## Usage
+This branch was forked and is being used for http://seschan.ml
+
 ## Requirements
 
 * HTTPS Capable Host
