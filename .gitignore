@@ -1,4 +1,4 @@
 config.yml
-nyx-testing.db
+*.db
 nyx
 run.sh

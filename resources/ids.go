@@ -1,8 +1,9 @@
 package resources
 
 import (
-	"go.rls.moe/nyx/resources/snowflakes"
 	"time"
+
+	"go.rls.moe/nyx/resources/snowflakes"
 )
 
 var fountain = snowflakes.Generator{
@@ -18,5 +19,5 @@ func getID() (int, error) {
 }
 
 func DateFromId(id int) time.Time {
-	return time.Unix(int64(fountain.IDToUnix(id)), 0).UTC()
+	return time.Unix(int64(fountain.IDToUnix(id)), 0).Local()
 }

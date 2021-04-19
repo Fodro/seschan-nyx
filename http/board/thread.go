@@ -2,14 +2,15 @@ package board
 
 import (
 	"bytes"
+	"net/http"
+	"strconv"
+	"time"
+
 	"github.com/pressly/chi"
 	"github.com/tidwall/buntdb"
 	"go.rls.moe/nyx/http/errw"
 	"go.rls.moe/nyx/http/middle"
 	"go.rls.moe/nyx/resources"
-	"net/http"
-	"strconv"
-	"time"
 )
 
 func serveThread(w http.ResponseWriter, r *http.Request) {
@@ -42,6 +43,11 @@ func serveThread(w http.ResponseWriter, r *http.Request) {
 			return err
 		}
 		ctx["Thread"] = thread
+		bList, err := resources.ListBoards(tx, r.Host)
+		if err != nil {
+			return err
+		}
+		ctx["Boards"] = bList
 		return nil
 	})
 	if err != nil {

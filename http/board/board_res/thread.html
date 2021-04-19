@@ -10,7 +10,16 @@
 <body>
 <div class="banner logo">
     <div class="site title"><h1><span class="reflink"><a href="/{{.Board.ShortName}}/board.html">/{{.Board.ShortName}}/</a></span></h1></div>
-    <div class="site description"><h2>{{.Board.LongName}}</h2></div>
+    <span>
+		<h1>
+		[
+		{{range .Boards}}
+			<a class="boardlink" href="/{{ .ShortName}}/board.html">{{.ShortName}},</a>
+		{{end}}
+		]
+		</h1>
+	</span>
+	<div class="site description"><h2>{{.Board.LongName}}</h2></div>
     <div class="site thread"><h3>{{.Thread.ID}}</h3></div>
 </div>
 {{ $boardlink := .Board.ShortName }}

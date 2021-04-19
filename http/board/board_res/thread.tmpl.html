@@ -23,18 +23,18 @@
                 </td>
             </tr>
             {{ end }}
-            <tr>
+            <!--<tr>
                 <td class="postblock">
                     TripCode
                 </td>
                 <td>
-                    <input type="text" name="tripcode" size=48 placeholder="Anonymous"/>
+                    <input type="text" name="tripcode" size=48 placeholder="Anon"/>
                     <input
                             type="hidden"
                             name="csrf_token"
                             value="{{ .CSRFToken }}" />
                 </td>
-            </tr>
+            </tr>-->
             <tr>
                 <td class="postblock">
                     Comment
@@ -125,7 +125,7 @@
         {{ if .Reply.Metadata.trip }}
             {{ .Reply.Metadata.trip}}
         {{ else }}
-            Anonymous
+            Anon
         {{ end }}
         {{ if .Reply.Metadata.modpost }}
             (Mod)
@@ -170,7 +170,7 @@
         {{ end }}
     </span>
     <span class="reflink">
-        <a href="/{{.Boardlink}}/{{.ThreadID}}/thread.html">No.{{.Reply.ID}}</a>
+        <a href="/{{.Boardlink}}/{{.ThreadID}}/thread.html">No.{{.Reply.ID}} (click to answer)</a>
     </span>
     {{ if .Reply.Thumbnail }}
     <br />
