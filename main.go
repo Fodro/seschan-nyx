@@ -1,12 +1,13 @@
 package main
 
 import (
-	"go.rls.moe/nyx/config"
-	"go.rls.moe/nyx/http"
+	"flag"
 	"log"
 	"os"
 	"time"
-	"flag"
+
+	"go.fodro/nyx/config"
+	"go.fodro/nyx/http"
 )
 
 func main() {

@@ -2,9 +2,10 @@ package config
 
 import (
 	"flag"
-	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"os"
+
+	"gopkg.in/yaml.v2"
 )
 
 var configFileName = "./config.yml"
@@ -20,6 +21,7 @@ type Config struct {
 	ListenOn          string        `yaml:"listen_on"`        // Address & Port to use
 	MasterSecret      string        `yaml:"secret"`           // Master Secret for keychain
 	DisableSecurity   bool          `yaml:"disable_security"` // Disables various flags to ensure non-HTTPS requests work
+	Nickname          string        `yaml:"nick"`
 	Captcha           CaptchaConfig `yaml:"captcha"`
 }
 
@@ -68,6 +70,7 @@ func Load() (*Config, error) {
 		Captcha: CaptchaConfig{
 			Mode: CaptchaDisabled,
 		},
+		Nickname: "Anonymous",
 	}
 	if _, err := os.Stat(configFileName); os.IsNotExist(err) {
 		return config, nil

@@ -2,16 +2,17 @@ package http
 
 import (
 	"fmt"
-	"github.com/GeertJohan/go.rice"
-	"github.com/pressly/chi"
-	"github.com/pressly/chi/middleware"
-	"go.rls.moe/nyx/config"
-	"go.rls.moe/nyx/http/admin"
-	"go.rls.moe/nyx/http/board"
-	"go.rls.moe/nyx/http/errw"
-	"go.rls.moe/nyx/http/middle"
 	"net/http"
 	"time"
+
+	rice "github.com/GeertJohan/go.rice"
+	"github.com/pressly/chi"
+	"github.com/pressly/chi/middleware"
+	"go.fodro/nyx/config"
+	"go.fodro/nyx/http/admin"
+	"go.fodro/nyx/http/board"
+	"go.fodro/nyx/http/errw"
+	"go.fodro/nyx/http/middle"
 )
 
 func Start(config *config.Config) error {

@@ -1,8 +1,9 @@
 package middle
 
 import (
-	"go.rls.moe/nyx/config"
 	"net/http"
+
+	"go.fodro/nyx/config"
 )
 
 func LimitSize(c *config.Config) func(http.Handler) http.Handler {

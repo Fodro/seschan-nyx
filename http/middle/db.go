@@ -2,10 +2,11 @@ package middle
 
 import (
 	"context"
-	"github.com/tidwall/buntdb"
-	"go.rls.moe/nyx/config"
-	"go.rls.moe/nyx/resources"
 	"net/http"
+
+	"github.com/tidwall/buntdb"
+	"go.fodro/nyx/config"
+	"go.fodro/nyx/resources"
 )
 
 func Database(c *config.Config) (func(http.Handler) http.Handler, error) {

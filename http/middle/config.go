@@ -2,8 +2,9 @@ package middle
 
 import (
 	"context"
-	"go.rls.moe/nyx/config"
 	"net/http"
+
+	"go.fodro/nyx/config"
 )
 
 func ConfigCtx(config *config.Config) func(http.Handler) http.Handler {

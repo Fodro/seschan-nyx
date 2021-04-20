@@ -2,15 +2,16 @@ package board
 
 import (
 	"fmt"
-	"github.com/pressly/chi"
-	"github.com/tidwall/buntdb"
-	"go.rls.moe/nyx/config"
-	"go.rls.moe/nyx/http/errw"
-	"go.rls.moe/nyx/http/middle"
-	"go.rls.moe/nyx/resources"
 	_ "image/gif"
 	_ "image/jpeg"
 	"net/http"
+
+	"github.com/pressly/chi"
+	"github.com/tidwall/buntdb"
+	"go.fodro/nyx/config"
+	"go.fodro/nyx/http/errw"
+	"go.fodro/nyx/http/middle"
+	"go.fodro/nyx/resources"
 )
 
 func handleNewReply(w http.ResponseWriter, r *http.Request) {

@@ -2,13 +2,14 @@ package admin
 
 import (
 	"bytes"
-	"github.com/GeertJohan/go.rice"
-	"github.com/pressly/chi"
-	"go.rls.moe/nyx/http/errw"
-	"go.rls.moe/nyx/http/middle"
 	"html/template"
 	"net/http"
 	"time"
+
+	rice "github.com/GeertJohan/go.rice"
+	"github.com/pressly/chi"
+	"go.fodro/nyx/http/errw"
+	"go.fodro/nyx/http/middle"
 )
 
 var (

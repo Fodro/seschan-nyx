@@ -3,13 +3,14 @@ package admin
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/tidwall/buntdb"
-	"go.rls.moe/nyx/http/errw"
-	"go.rls.moe/nyx/http/middle"
-	"go.rls.moe/nyx/resources"
 	"net/http"
 	"strings"
 	"time"
+
+	"github.com/tidwall/buntdb"
+	"go.fodro/nyx/http/errw"
+	"go.fodro/nyx/http/middle"
+	"go.fodro/nyx/resources"
 )
 
 func handleCleanup(w http.ResponseWriter, r *http.Request) {

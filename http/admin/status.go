@@ -3,13 +3,14 @@ package admin
 import (
 	"bytes"
 	"fmt"
-	"github.com/dustin/go-humanize"
-	"go.rls.moe/nyx/http/errw"
-	"go.rls.moe/nyx/http/middle"
 	"net/http"
 	"runtime"
 	"sync"
 	"time"
+
+	"github.com/dustin/go-humanize"
+	"go.fodro/nyx/http/errw"
+	"go.fodro/nyx/http/middle"
 )
 
 var memStat = map[string]interface{}{}

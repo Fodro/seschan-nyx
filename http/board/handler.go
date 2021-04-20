@@ -3,16 +3,17 @@ package board
 import (
 	"bytes"
 	"errors"
-	"github.com/GeertJohan/go.rice"
-	"github.com/pressly/chi"
-	"github.com/tidwall/buntdb"
-	"go.rls.moe/nyx/http/errw"
-	"go.rls.moe/nyx/http/middle"
-	"go.rls.moe/nyx/resources"
 	"html/template"
 	"net/http"
 	"strconv"
 	"time"
+
+	rice "github.com/GeertJohan/go.rice"
+	"github.com/pressly/chi"
+	"github.com/tidwall/buntdb"
+	"go.fodro/nyx/http/errw"
+	"go.fodro/nyx/http/middle"
+	"go.fodro/nyx/resources"
 )
 
 var (

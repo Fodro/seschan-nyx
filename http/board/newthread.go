@@ -6,10 +6,10 @@ import (
 
 	"github.com/pressly/chi"
 	"github.com/tidwall/buntdb"
-	"go.rls.moe/nyx/config"
-	"go.rls.moe/nyx/http/errw"
-	"go.rls.moe/nyx/http/middle"
-	"go.rls.moe/nyx/resources"
+	"go.fodro/nyx/config"
+	"go.fodro/nyx/http/errw"
+	"go.fodro/nyx/http/middle"
+	"go.fodro/nyx/resources"
 )
 
 func handleNewThread(w http.ResponseWriter, r *http.Request) {

@@ -1,9 +1,10 @@
 package middle
 
 import (
-	"github.com/icza/session"
-	"go.rls.moe/nyx/config"
 	"net/http"
+
+	"github.com/icza/session"
+	"go.fodro/nyx/config"
 )
 
 func SetupSessionManager(c *config.Config) {

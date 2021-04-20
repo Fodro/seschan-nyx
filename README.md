@@ -79,6 +79,8 @@ The following is a list of options available (and supported);
 * `site.title` - Site Title
 * `site.description` - Site Description
 * `captcha` - Captcha Mode, currently only `internal` is supported
+* `nick` - Displayed name of the anonymous posters, default is `Anonymous`
+
 
 The config accepts other options but these may not be supported.
 

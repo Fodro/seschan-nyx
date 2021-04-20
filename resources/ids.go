@@ -3,7 +3,7 @@ package resources
 import (
 	"time"
 
-	"go.rls.moe/nyx/resources/snowflakes"
+	"go.fodro/nyx/resources/snowflakes"
 )
 
 var fountain = snowflakes.Generator{

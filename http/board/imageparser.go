@@ -2,15 +2,16 @@ package board
 
 import (
 	"bytes"
-	"github.com/nfnt/resize"
-	"go.rls.moe/nyx/http/errw"
-	"go.rls.moe/nyx/resources"
 	"image"
 	"image/png"
 	"io"
 	"log"
 	"mime/multipart"
 	"net/http"
+
+	"github.com/nfnt/resize"
+	"go.fodro/nyx/http/errw"
+	"go.fodro/nyx/resources"
 )
 
 func parseImage(reply *resources.Reply, file multipart.File, hdr *multipart.FileHeader, err error) error {

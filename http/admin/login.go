@@ -1,12 +1,13 @@
 package admin
 
 import (
+	"net/http"
+
 	"github.com/icza/session"
 	"github.com/tidwall/buntdb"
-	"go.rls.moe/nyx/http/errw"
-	"go.rls.moe/nyx/http/middle"
-	"go.rls.moe/nyx/resources"
-	"net/http"
+	"go.fodro/nyx/http/errw"
+	"go.fodro/nyx/http/middle"
+	"go.fodro/nyx/resources"
 )
 
 func handleLogout(w http.ResponseWriter, r *http.Request) {

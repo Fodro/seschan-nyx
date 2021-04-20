@@ -3,12 +3,13 @@ package board
 import (
 	"errors"
 	"fmt"
-	"github.com/pressly/chi"
-	"go.rls.moe/nyx/http/errw"
-	"go.rls.moe/nyx/http/middle"
-	"go.rls.moe/nyx/resources"
 	"net/http"
 	"strconv"
+
+	"github.com/pressly/chi"
+	"go.fodro/nyx/http/errw"
+	"go.fodro/nyx/http/middle"
+	"go.fodro/nyx/resources"
 )
 
 var trollThrottle = errors.New("Troll throttle")

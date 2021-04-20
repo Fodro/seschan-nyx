@@ -2,11 +2,12 @@ package errw
 
 import (
 	"errors"
-	"github.com/GeertJohan/go.rice"
-	"github.com/pressly/chi/middleware"
-	"go.rls.moe/nyx/http/middle"
 	"html/template"
 	"net/http"
+
+	rice "github.com/GeertJohan/go.rice"
+	"github.com/pressly/chi/middleware"
+	"go.fodro/nyx/http/middle"
 )
 
 var (

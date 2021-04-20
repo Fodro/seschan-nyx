@@ -1,4 +1,4 @@
-module go.rls.moe/nyx
+module go.fodro/nyx
 
 go 1.14
 
